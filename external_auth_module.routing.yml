@@ -1,0 +1,21 @@
+external_auth_module.auth_controller_login:
+  path: '/extauth/login'
+  defaults:
+    _controller: '\Drupal\external_auth_module\Controller\AuthController::login'
+    _title: 'login'
+  requirements:
+    _permission: 'access content'
+external_auth_module.auth_controller_logout:
+  path: '/extauth/logout'
+  defaults:
+    _controller: '\Drupal\external_auth_module\Controller\AuthController::logout'
+    _title: 'logout'
+  requirements:
+    _permission: 'access content'
+external_auth_module.auth_controller_register:
+  path: '/extauth/register'
+  defaults:
+    _controller: '\Drupal\external_auth_module\Controller\AuthController::register'
+    _title: 'register'
+  requirements:
+    _permission: 'access content'
